@@ -13,7 +13,7 @@ public class QueueDemo {
         //Extract and displaying elements of bigQueue
         System.out.println("Contents of bigQueue: ");
         for (i = 0; i < 26; i++) {
-            ch = bigQueue.getElement();
+            ch = bigQueue.extractElement();
             if (ch != (char) 0) System.out.print(ch + " ");
         }
         System.out.println("\n");
@@ -24,12 +24,10 @@ public class QueueDemo {
             smallQueue.putElement((char) ('Z' - i));
             System.out.println();
         }
-        //System.out.println();
-
         //Additional bugs in smallQueue
         System.out.println("Contents of smallQueue: ");
         for (i = 0; i < 5; i++){
-            ch = smallQueue.getElement();
+            ch = smallQueue.extractElement();
             if (ch != (char) 0) System.out.print(ch);
         }
     }

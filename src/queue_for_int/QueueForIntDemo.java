@@ -13,7 +13,7 @@ public class QueueForIntDemo {
 
         System.out.println("Contents of bigIntQueue: ");
         for (i = 0; i < 100; i++) {
-            num = bigIntQueue.getElement();
+            num = bigIntQueue.extractElement();
             if (num != 0) System.out.print(num + " ");
         }
         System.out.println("\n");
@@ -23,12 +23,10 @@ public class QueueForIntDemo {
             smallIntQueue.putElement(100 - i);
             System.out.println();
         }
-        System.out.println();
-
-        //Additional bugs in smallQueue
+        //Additional bugs in smallItnQueue
         System.out.print("Contents of smallIntQueue: ");
         for (i = 0; i < 5; i++){
-            num = smallIntQueue.getElement();
+            num = smallIntQueue.extractElement();
             if (num != 0) System.out.print(num + " ");
         }
     }
