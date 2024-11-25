@@ -1,6 +1,6 @@
 public class Queue {
-    char[] queueArray; // Array storing queue data
-    int putLoc, extractLoc; // Indexes for positions of placing and retrieving queue elements
+    private char[] queueArray; // Array storing queue data
+    private int putLoc, extractLoc; // Indexes for positions of placing and retrieving queue elements
 
     //The constructor of the Queue class creates an array of the specified size
     Queue (int size){
